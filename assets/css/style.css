@@ -1,0 +1,201 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+/* establishing color theme using variables */
+:root {
+    --accent-color: #863414;
+    --shading-color: #DBC6B4;
+    --item-color: #ce8264;
+}
+
+/* targets all h2 elements, gives aestehtic cohesion to page */
+h2 {
+    font-size: 35px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 30px;
+    color:white
+}
+
+/* adds padding to all paragraph text */
+p {
+    padding:10px;
+    color:#232020
+}
+
+/* targets body section */
+body {
+    background-color: var(--shading-color);
+}
+
+/* targets nav bar */
+nav {
+    display: flex;
+    background-color:var(--accent-color);
+    justify-content:flex-end;
+}
+
+/* formats nav bar to look more intuitive */
+nav a {
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* when hover on nav bar elements, the following qualities apply */
+nav a:hover {
+    background-color:var(--item-color);
+    color:black;
+}
+
+/* Adds a margin of 10px to all list item */
+li {
+    margin: 10px;
+}
+
+/* removes underline from asset tag links */
+a {
+    text-decoration-color: black;
+    text-emphasis-color: white;
+    text-decoration: none;
+}
+
+/* creates a hero image which is linked in the stylesheet */
+.hero-image {
+    background-image: url(../images/Marimba_profile.jpg);
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-size:cover;
+    background-position: center;
+}
+
+/* targets hero text */
+.hero-text {
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    color:white;
+    font-size: 40px;
+    padding-right: 20px;
+
+}
+ /* creates a class to allow ease of repeating the same formatting styles */
+.margin-right {
+    margin-right:20%;
+    margin-left:20px;
+}
+
+/* Each of the ID tags are used only to target background color */
+#about {
+    background-color: var(--item-color);
+}
+
+#media {
+    background-color: var(--item-color);
+}
+
+#work {
+    background-color: var(--item-color);
+}
+
+/* This section allows more intuitive organisation of image cards */
+.work {
+    flex: 5;
+    padding: 10px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.work img {
+    max-width: 100%;
+   
+}
+
+.work footer {
+    font-size: 25px;
+    justify-content: center;
+    padding:10px;
+    color: white;
+}
+
+.card1 {
+    border-style:solid;
+    border-width: 6px;
+    border-color: var(--accent-color);
+    margin: 20px;
+    max-width: 96%;
+    text-align: center;
+    background: var(--accent-color);
+}
+
+.card1 img {
+    opacity: .78;
+}
+
+/* this makes the website more dynamic by changing the aesthetic quality of elements the cursor is hovering over the element */
+.card1:hover {
+    border-color:black;
+    background-color: black;
+    box-shadow: 10px 10px 10px 10px #5610109f;
+    cursor: grab;
+}
+
+/* element is highlighted as the opacity of the image is 100% on over */
+.card1:hover img {
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.card {
+    border-style: solid;
+    border-width: 6px;
+    border-color: var(--accent-color);
+    margin: 20px;
+    max-width: 46%;
+    text-align: center;
+    background: var(--accent-color);
+}
+
+.card img {
+    opacity: .78;
+}
+
+
+.card:hover {
+    border-color:black;
+    background-color: black;
+    box-shadow: 10px 10px 10px 10px #5610109f;
+    cursor: grab;
+}
+
+.card:hover img {
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+/* targeting the contact id to change bakground color */
+#contact {
+    background-color: var(--item-color);
+}
+
+#contact li {
+    list-style:disc;
+    margin-left: 25px;
+}
+
+/* removes default color of links */
+#contact a {
+    text-decoration: none;
+    color:black
+}
+
+/* causes the text color of the links to turn white on hover */
+#contact a:hover{
+    color:white
+}
